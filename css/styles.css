@@ -843,3 +843,72 @@ button:focus {
 .modal-wrap textarea:focus::placeholder {
   color: var(--active-color);
 }
+
+/* Subscribe footer form*/
+
+.subscribe-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.footer-subscribe {
+  margin-left: 80px;
+}
+
+.subcribe-form-title {
+  font-weight: 500;
+  color: var(--primary-white-color);
+}
+
+.subscribe-btn {
+  display: block;
+  border: none;
+  padding: 8px 64px 8px 24px;
+  border-radius: 4px;
+  min-width: 165px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-white-color);
+  cursor: pointer;
+  background-color: var(--active-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: var(--btn-active-color);
+}
+
+.modal-subscribe-btn {
+  position: relative;
+}
+
+.subscribe-icon {
+  position: absolute;
+  left: 117px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: var(--primary-white-color);
+}
+
+.subscribe-input {
+  width: 264px;
+  height: 40px;
+  padding-left: 16px;
+  background-color: var(--headers-text-color);
+
+  border: 1px solid var(--primary-white-color);
+  border-radius: 4px;
+  outline: transparent;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--primary-white-color);
+}
