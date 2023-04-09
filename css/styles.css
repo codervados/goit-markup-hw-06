@@ -912,3 +912,19 @@ button:focus {
   letter-spacing: 0.04em;
   color: var(--primary-white-color);
 }
+
+.subscribe-input-wrap input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--primary-white-color);
+}
+
+.subscribe-input-wrap input:focus::placeholder {
+  color: var(--active-color);
+}
+
+.subscribe-input:focus {
+  border-color: var(--active-color);
+}
