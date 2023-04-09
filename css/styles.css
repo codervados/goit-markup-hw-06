@@ -797,14 +797,23 @@ button:focus {
 }
 
 .check-privacy {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--customers-color-grey);
+  cursor: pointer;
+}
+
+.check-privacy span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  margin-right: 8px;
 }
 
 .privacy-policy-link {
@@ -814,17 +823,6 @@ button:focus {
   letter-spacing: 0.04em;
   text-decoration-line: underline;
   color: var(--active-color);
-}
-
-.check-privacy span {
-  width: 16px;
-  height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: transparent;
 }
 
 .modal-field {
@@ -864,6 +862,7 @@ button:focus {
 
 .subscribe-btn {
   display: block;
+  position: relative;
   border: none;
   padding: 8px 64px 8px 24px;
   border-radius: 4px;
@@ -884,9 +883,9 @@ button:focus {
   background-color: var(--btn-active-color);
 }
 
-.modal-subscribe-btn {
+/* .modal-subscribe-btn {
   position: relative;
-}
+} */
 
 .subscribe-icon {
   position: absolute;
